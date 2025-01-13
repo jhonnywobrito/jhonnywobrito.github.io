@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - Werewolf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/mini-logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8b0455432d.js" crossorigin="anonymous"></script>
+</head>
+
+    <!-- Relatório -->
+
+<body data-page="relatorio">
+    <div id="pai-dia" class="container-tabela">
+        <div id="mestre-dia">
+            <div class="grid">
+                <div class="imagem-papel">
+                    
+                    <p id="obs">Passe o aparelho para o mestre do jogo.</p>
+                    <p id="dia">DIA</p>
+                </div>
+                
+                <img class="imagem-papel" src="img/mestre.png" alt="Imagem do papel">
+
+            </div>
+            <div class="nome-pessoa">
+                <h3 class="nome-jogador">MURAL DA VILA</h3>
+                <div id="relatorio" class="espaco">
+                    <div class="grid">
+                        <p id="relatorio-jogador"></p>
+                        <p id="descricao-relatorio">Não teve sorte dessa vez...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navegacao">
+                <button class="botao-conteudo" id="sortear">Continuar</button>
+            </div> 
+        </div>
+    </div>
+
+    <div id="modal-reuniao" class="modal" style="display: none;">
+        <div id="pai-reuniao">
+            <div id="reuniao">
+                <h2>REUNIÃO</h2>
+                <div id="contador-container">
+                    <p id="contador">01:30</p>
+                    <button id="iniciar-contagem">Iniciar contagem</button>
+                </div>
+            </div>
+            <div class="navegacao">
+                <button id="pular">Pular</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="components/script.js"></script>
+    
+
+</body>
+</html>

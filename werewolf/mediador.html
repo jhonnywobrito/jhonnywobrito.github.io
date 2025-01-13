@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - Werewolf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/mini-logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8b0455432d.js" crossorigin="anonymous"></script>
+</head>
+<body data-page="mediador">
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div id="pai-mestre-jogo">
+            <div id="mestre-jogo">
+                <div>
+                    <div class="nome-pessoa">
+                        <div class="papel-jogador">
+                            <p class="comando"></p>
+                        </div>
+                        <div class="espaco"></div>
+                    </div>
+                </div>
+                <div class="navegacao">
+                    <button id="continuar-btn">Continuar</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Página Principal -->
+    <div id="pagina-mediador">
+        <div id="mestre-jogo">
+            <div class="grid" id="papel">
+                <p id="nome-jogador">WEREWOLF</p>
+                <img src="img/mestre.png" id="imagem-jogador" alt="Imagem do Jogador">
+                
+            </div>
+            <div class="nome-pessoa">
+                <p id="papel-jogador">Papel do Jogador</p>
+                <p id="descricao-papel" class="espaco">Descrição do papel aparecerá aqui.</p>
+            </div>
+            <div id="navegacao">
+            </div>
+        </div>
+    </div>
+
+    <script src="components/script.js"></script>
+</body>
+</html>
